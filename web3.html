@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes For Men</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 20%;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .filters {
+            margin-bottom: 20px;
+        }
+
+        /* Updated grid layout: 3 rows × 4 columns */
+        .products {
+            width: 80%;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 900px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr); /* 2 per row on small screens */
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                border-right: none;
+            }
+
+            .products {
+                grid-template-columns: 1fr; /* 1 per row on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Clothes For Men</h2>
+    
+    <div class="container">
+        <div class="sidebar">
+            <h3>Filters</h3>
+            <div class="filters">
+                <h4>Brand</h4>
+                <input type="checkbox"> Roadster<br>
+                <input type="checkbox"> Highlander<br>
+                <input type="checkbox"> Arrow<br>
+                <input type="checkbox"> Allen Solly<br>
+            </div>
+            <div class="filters">
+                <h4>Price Range</h4>
+                <input type="range" min="100" max="10000">
+            </div>
+            <div class="filters">
+                <h4>Color</h4>
+                <input type="checkbox"> Blue<br>
+                <input type="checkbox"> White<br>
+                <input type="checkbox"> Black<br>
+            </div>
+        </div>
+
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcScJGrlagaDepwK_-CakDQG99ZAPOQKTrwhb4zTD6d6g5nrbv2sWDFA_wyFyUUyvxjKgIr1WhzDZSeuXiALBh-lgtiYi1pt2U6DxvvfnYcsRModnwGynPRFqTKtuMQBbICx60BInYg&usqp=CAc" alt="Shirt 1">
+                <h3>STOP-
+Embellished Polyester Round Neck Girls Dress</h3>
+                <p class="price">Rs. 759 <del>Rs. 1999</del> (62% OFF)</p>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQMLaJhAKuh8iqC1AzVoZKa9fLnI_v-vak9OW-D9OjzpR_CLpcQdt0tFEWLlPGgC58UTq0gyTyZwWVD7UWafi-0gVQbO3HcPAIMnhytt7_i-Lxb_CmF7nGaog" alt="Shirt 2">
+                <h3>Gap Kids Girls Floral Print Regular Fit Hoodie with Kangaroo Pocket For Girls</h3>
+                <p class="price">Rs. 2999</p>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTix7FtsvJHjli8DyuK-akMB7RZxMTp_ApGiFzrFFodzY_p7WJxqvuf5oRc4StU9ycpB0pXF9f9I22hTTAozA0FpFsk7Taxmvs5zQphxU6XwzVklPnoSVUGJw" alt="Shirt 3">
+                <h3>H&M Boys Pure Cotton 2-Piece Sweatshirt Set </h3>
+                <p class="price">Rs. 626 <del>Rs. 1899</del> (67% OFF)</p>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ-HlBLn3IcDCb9EUP4myjLOUQJiHn4RUAo7F0SsUB6UCpcEHmB9sStfAk9Gl9l2K1maiM84ApEw-QQftQHmcXI0hChTgssOlFL5hg3I-cthpYJSvbG_d0b6g" alt="Shirt 4">
+                <h3>Puma Shirt 'Essentials' boy Logo print</h3>
+                <p class="price">Rs. 539 <del>Rs. 1199</del> (55% OFF)</p>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQxwCY6NVdhDpiCKnW0_pcK6fPbK_GWqwGN8UnJiy2o_eXNBBhG7eau3mUDcWXAYF5wmmIT4Cn6WZTFfCvn6Z8MBTKp2w8OYihf6gyU-sQTTUiKrCQ6C6PaOQu2JBwwVVV4NIQ5VVOq2Q&usqp=CAc " alt="Shirt 5">
+                <h3>Happy Faces
+Boys Pure Cotton Abstract Print T-shirt with Shorts</h3>
+                <p class="price">Rs. 899 <del>Rs. 1499</del> (40% OFF)</p>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSrt20yrM9VzxHXRFBvymaem2x7GPYCDwlrtQ7SV_qznkiW1pB0h9-4LfC7ptfFNpvIKS24USLB366qjy0Zgy11YI9muPIerpU0HPe2J6APgJ6FoONHkv2TNk3wpdsC5O5b66Zts3Hx&usqp=CAc" alt="Shirt 6">
+                <h3>
+Mothercare Girls Half Sleeves Floral Design Top - Cream</h3>
+                <p class="price">Rs. 1299</p>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTSNUnSoUx_MnpoP6s8ca0u3vijmrOUn46n8Y-pgGnfLHQ2Hxi0NSD2p1VHkBL8nkEEQZ4J6meyeY_DdYMLF4zQAwwokS7RmQ_txl55YIBBlaN5bs-Do3_frA&usqp=CAc" alt="Shirt 7">
+                <h3>BIBA-Orange Rayon Asymmetric Suit Set</h3>
+                <p class="price">Rs. 1599 <del>Rs. 2599</del> (38% OFF)</p>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT2RhVJjDnW-oZQEx_f5d2DSPb7CAQsV6ZKbAmLi_H2stASDN3OYFAi1QR8_U30_tXH2kjV0ZNSBG4zGu_GEqu9N5ZuCxXg0LX0wncT_sfEZKpw3wufFWiX3g&usqp=CAc" alt="Shirt 8">
+                <h3>Manyavar-Boys Aqua Green Floral Printed Kurta Set</h3>
+                <p class="price">Rs. 1099 <del>Rs. 1899</del> (42% OFF)</p>
+            </div>
+          </div>
+    </div>
+
+</body>
+</html>
