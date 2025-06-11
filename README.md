@@ -20,21 +20,7 @@ The E-Commerce Frontend Interface simulates the core visual and interactive feat
 - Navigation bar and footer
 - Responsive design for mobile, tablet, and desktop views
 - (Optional) Add to cart simulation using JavaScript
-
-## 📁 Folder Structure
-
-```bash
-ecommerce-frontend/
-│
-├── index.html          # Main entry page
-├── products.html       # Product listing page
-├── css/
-│   └── styles.css      # All CSS styles
-├── js/
-│   └── script.js       # JavaScript for interactivity
-├── assets/             # Images and media files
-└── README.md
-🧪 How to Use
+- 🧪 How to Use
 Clone or download the repository.
 
 Open index.html in any web browser.
@@ -50,3 +36,21 @@ Gained practical experience in DOM manipulation with JavaScript
 
 📜 License
 This project is built for educational and personal use only. It does not have any commercial affiliation with Myntra or similar platforms.
+
+
+## 📁 Folder Structure
+
+```bash
+ecommerce-frontend/
+│
+├── index.html          # Main entry page
+├── products.html       # Product listing page
+├── css/
+│   └── styles.css      # All CSS styles
+├── js/
+│   └── script.js       # JavaScript for interactivity
+├── assets/             # Images and media files
+└── README.md
+
+
+
