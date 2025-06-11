@@ -20,21 +20,22 @@ The E-Commerce Frontend Interface simulates the core visual and interactive feat
 - Navigation bar and footer
 - Responsive design for mobile, tablet, and desktop views
 - (Optional) Add to cart simulation using JavaScript
-- 🧪 How to Use
+
+##🧪 How to Use
 Clone or download the repository.
 
 Open index.html in any web browser.
 
 Navigate through the interface and explore the product listing.
 
-🎯 Learning Outcomes
+##🎯 Learning Outcomes
 Improved skills in HTML5 semantic structure
 
 Developed mobile-responsive layouts using CSS
 
 Gained practical experience in DOM manipulation with JavaScript
 
-📜 License
+##📜 License
 This project is built for educational and personal use only. It does not have any commercial affiliation with Myntra or similar platforms.
 
 
